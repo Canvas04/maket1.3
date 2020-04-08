@@ -2,19 +2,19 @@
 
 /* CSS для ширины, которая меньше 575px (включительно) */
 
-.sm__icons {
+.sm {
     display: none;
 }
 
-.md__icons {
+.md {
     display: none;
 }
 
-.lg__icons {
+.lg {
     display: none;
 }
 
-.xl__icons {
+.xl {
     display: none;
 }
 
@@ -33,6 +33,33 @@
     outline-offset: none;
 }
 
+.xs__header {
+    font-size: 20px;
+    margin-top: 28px;
+}
+
+@media (min-width: 320px) {
+    .xs__header {
+        font-size: 24px;
+        margin-top: 28px;
+    }
+}
+
+.xs__head {
+    margin-left: 16px;
+    position: relative;
+}
+
+.xs__head::before {
+    content: ' ';
+    width: 7px;
+    height: 60px;
+    background-image: url(../img/highlight.svg);
+    position: absolute;
+    left: -18px;
+    top: -10px;
+}
+
 /* sm-устройства (больше или равно 576px) */
 
 @media (min-width: 576px) {
@@ -47,6 +74,9 @@
     }
     .xl {
         display: none;
+    }
+    .sm {
+        display: block;
     }
     .sm__icons {
         display: flex;
@@ -69,6 +99,22 @@
         background-color: #FFFFFF;
         outline: none;
         outline-offset: none;
+    }
+    .sm__header {
+        font-size: 28px;
+    }
+    .sm__head {
+        margin-left: 24px;
+        position: relative;
+    }
+    .sm__head::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 70px;
+        background-image: url(../img/highlight.svg);
+        left: -25px;
+        top: -10px;
     }
 }
 
@@ -112,6 +158,22 @@
         background-color: #FFFFFF;
         outline: none;
         outline-offset: none;
+    }
+    .md__header {
+        font-size: 28px;
+    }
+    .md__head {
+        margin-left: 24px;
+        position: relative;
+    }
+    .md__head::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 70px;
+        background-image: url(../img/highlight.svg);
+        left: -25px;
+        top: -10px;
     }
 }
 
@@ -208,11 +270,9 @@
     .lg {
         display: none;
     }
-
     .xl {
         display: block;
     }
-
     .main {
         max-width: 100%;
         margin-top: 42px;
@@ -222,18 +282,14 @@
     .xl__icons-and-header {
         width: 100%;
         display: flex;
-        
     }
-
     .xl__header {
         flex-basis: 50%;
         font-size: 28px
     }
-
     .xl__head {
         margin: 0;
     }
-
     .xl__header::before {
         content: " ";
         background-image: url(../img/highlight.svg);
@@ -290,11 +346,9 @@
     .lg {
         display: none;
     }
-
     .xl {
         display: block;
     }
-
     .main {
         max-width: 100%;
         margin-top: 42px;
@@ -304,18 +358,14 @@
     .xl__icons-and-header {
         width: 100%;
         display: flex;
-        
     }
-
     .xl__header {
         flex-basis: 50%;
         font-size: 28px
     }
-
     .xl__head {
         margin: 0;
     }
-
     .xl__header::before {
         content: " ";
         background-image: url(../img/highlight.svg);
@@ -325,7 +375,6 @@
         left: 0;
         top: 30px;
     }
-
     .xl__block_links-and-buttons {
         flex-basis: 75%;
         display: flex;
