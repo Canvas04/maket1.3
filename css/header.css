@@ -33,15 +33,17 @@
     outline-offset: none;
 }
 
-.xs__header {
-    font-size: 20px;
+.xs__head {
+    font-size: 24px;
     margin-top: 28px;
+    width: 100%;
 }
 
 @media (min-width: 320px) {
-    .xs__header {
-        font-size: 24px;
-        margin-top: 28px;
+    .xs__head {
+        font-size: 28px;
+        margin-top: 24px;
+        width: 100%;
     }
 }
 
@@ -101,10 +103,10 @@
         outline-offset: none;
     }
     .sm__header {
-        font-size: 28px;
+        margin-left: 25px;
     }
     .sm__head {
-        margin-left: 24px;
+        font-size: 28px;
         position: relative;
     }
     .sm__head::before {
