@@ -1,3 +1,11 @@
+html, .body {
+    font-family: "TT Lakes";
+    background-color: #f8f8f8;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "TT Lakes";
+}
+
 /* xs - устройства (до 576px) */
 
 /* CSS для ширины, которая меньше 575px (включительно) */
